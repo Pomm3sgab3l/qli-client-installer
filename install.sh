@@ -24,13 +24,13 @@ mkdir -p q
 cd q || { echo "Fehler: Konnte nicht in Ordner q wechseln"; exit 1; }
 
 # Datei herunterladen
-wget https://dl.qubic.li/downloads/qli-Client-3.3.3-Linux-x64-beta.tar.gz || { echo "Fehler: Download fehlgeschlagen"; exit 1; }
+wget https://dl.qubic.li/downloads/qli-Client-3.3.4-Linux-x64-beta.tar.gz || { echo "Fehler: Download fehlgeschlagen"; exit 1; }
 
 # Entpacken
-tar -xvzf qli-Client-3.3.3-Linux-x64-beta.tar.gz || { echo "Fehler: Entpacken fehlgeschlagen"; exit 1; }
+tar -xvzf qli-Client-3.3.4-Linux-x64-beta.tar.gz || { echo "Fehler: Entpacken fehlgeschlagen"; exit 1; }
 
 # .tar.gz löschen
-rm qli-Client-3.3.3-Linux-x64-beta.tar.gz
+rm qli-Client-3.3.4-Linux-x64-beta.tar.gz
 
 # appsettings.json anpassen
 cat > appsettings.json << EOL
